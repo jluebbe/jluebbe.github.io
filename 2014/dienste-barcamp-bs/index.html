@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Netzdienste selbst hosten</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <meta name="author" content="Jan Lübbe">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="css/favicon.png" />
+    <link rel="apple-touch-icon" href="css/apple-touch-icon.png" />
+    <!-- Code Prettifier: -->
+<link href="css/highlight.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+  <div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+    <div id="impress">
+    <div class='step' >
+    
+<h1>Netzdienste selbst hosten</h1>
+
+<h2>Nicht nur Webseiten!</h2>
+</div>
+      <div class='step' >
+    
+<h1>Warum?</h1>
+
+<h1>Was?</h1>
+
+<h1>Wie?</h1>
+</div>
+      <div class='step' >
+    
+<h1>Warum?</h1>
+
+<p><img src="images/free.png" alt="text"></p>
+</div>
+      <div class='step'  data-z='-1000'>
+    
+<h1>Warum?</h1>
+
+<ul>
+<li>Unabhängigkeit
+
+<ul>
+<li>Daten (und Metadaten!) unter eigener Kontrolle</li>
+<li>Dezentralisierung</li>
+</ul></li>
+<li>Neues lernen</li>
+<li>Communities unterstützen</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>Was?</h1>
+
+<ul>
+<li>GitHub</li>
+<li>Mail</li>
+<li>DNS &amp; DynDNS</li>
+<li>XMPP (Jabber)</li>
+<li>Video-/Audiokonferenz</li>
+<li>VPN</li>
+<li>&quot;Cloud&quot;</li>
+<li>Virtualisierung</li>
+</ul>
+</div>
+      <div class='step'  data-z='-1000'>
+    
+<h2>GitHub</h2>
+
+<ul>
+<li><a href="https://about.gitlab.com/">GitLab</a> statt GitHub
+
+<ul>
+<li>Repo-Verwaltung</li>
+<li>Wiki</li>
+<li>Issue-Tracking</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step'  data-z='-1000'>
+    
+<h2>Mail</h2>
+
+<ul>
+<li>Postfix, Dovecot, Roundcube, Mailman, Amavis</li>
+<li>Viel Aufwand! → am besten für viele Nutzer
+
+<ul>
+<li>Spam</li>
+<li>Fehlkonfigurationen führen zu Mailverlust!</li>
+</ul></li>
+<li>Oder fertig vorbereitet: z.B. <a href="http://kolab.org/">Kolab</a> oder <a href="http://www.sogo.nu/">SOGo</a></li>
+</ul>
+</div>
+      <div class='step'  data-z='-1000'>
+    
+<h2>DNS &amp; DynDNS</h2>
+
+<ul>
+<li>Bind 9
+
+<ul>
+<li>DNSSEC, DANE</li>
+</ul></li>
+<li>DynDNS: <a href="https://nsupdate.info/">nsupdate.info</a> / <a href="https://stratum0.net/">stratum0.net</a></li>
+<li>Mit jemand anderem &quot;secondaries tauschen&quot;</li>
+</ul>
+</div>
+      <div class='step'  data-z='-1000'>
+    
+<h2>XMPP (Jabber)</h2>
+
+<ul>
+<li>(Gruppen-)Chat</li>
+<li>Federated</li>
+<li>Android-Client: <a href="https://github.com/siacs/Conversations">Conversations</a>
+(OTR und GPG mit OpenKeychain) oder <a href="https://chatsecure.org/">ChatSecure</a></li>
+<li>Server: <a href="https://prosody.im/">prosody</a> oder <a href="https://www.ejabberd.im/">ejabberd</a></li>
+</ul>
+</div>
+      <div class='step'  data-z='-1000'>
+    
+<h2>Video-/Audio-Konferenz</h2>
+
+<ul>
+<li>Multi-User-Voice-Chat: <a href="http://wiki.mumble.info/wiki/Main_Page">Mumble</a></li>
+<li>Video-Konferenz im Browser: <a href="https://palava.tv/">palava.tv</a></li>
+<li>VoIP: <a href="https://ostel.co/">ostel.co</a> (oder z.B. <a href="http://www.asterisk.org/">asterisk</a>)</li>
+</ul>
+</div>
+      <div class='step'  data-z='-1000'>
+    
+<h2>VPN</h2>
+
+<ul>
+<li>Sicherer Netzzugang von überall</li>
+<li><a href="https://openvpn.net/">OpenVPN</a> über TCP oder UDP</li>
+<li><a href="http://code.kryo.se/iodine/">iodine</a> als DNS-Tunnel</li>
+</ul>
+</div>
+      <div class='step'  data-z='-1000'>
+    
+<h2>&quot;Cloud&quot;</h2>
+
+<ul>
+<li><a href="http://owncloud.org/">OwnCloud</a>: DropBox, Kalender, Adressen, ...</li>
+<li><a href="http://etherpad.org/">Etherpad</a>: Multiuser-Texteditor</li>
+<li><a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">ZeroBin</a>: Verschlüsselter Textsnipsel-Austausch</li>
+<li>Social: <a href="http://friendica.com/">Friencia</a>, <a href="https://joindiaspora.com/">Diaspora</a>, <a href="http://pump.io/">pump.io</a></li>
+</ul>
+</div>
+      <div class='step'  data-z='-1000'>
+    
+<h2>Virtualisierung</h2>
+
+<ul>
+<li>Als Basis für die anderen Dienste</li>
+<li>Physikalischen Server gemeinsam nutzen</li>
+<li>libvirt (KVM oder Xen)
+
+<ul>
+<li><a href="http://virt-manager.org/">virt-manager</a> als GUI per SSH</li>
+<li><a href="https://github.com/kimchi-project/kimchi">kimchi</a> als Web-Interface</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>Wie?</h1>
+
+<ul>
+<li>Jeder betreibt 1+ Dienste</li>
+<li>Gemeinsames (virtualisiertes) Hosting</li>
+<li>Es gibt viele gut Anleitungen</li>
+<li>Oder: Im nächsten Hackerspace mitmachen</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Danke!</h2>
+
+<h1>Diskussion?</h1>
+</div>
+      <div class='step' >
+    
+<h2>Links aus der Diskussion</h2>
+
+<ul>
+<li><a href="https://git-annex.branchable.com/">https://git-annex.branchable.com/</a></li>
+<li><a href="http://seafile.com/en/home/">http://seafile.com/en/home/</a></li>
+<li><a href="https://posteo.de/de">https://posteo.de/de</a></li>
+<li><a href="https://mailbox.org/">https://mailbox.org/</a></li>
+<li><a href="https://workaround.org/ispmail">https://workaround.org/ispmail</a></li>
+</ul>
+
+      </div>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+  </body>
+</html>
+    
